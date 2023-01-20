@@ -1,0 +1,86 @@
+2023-01-20T15:27:53+00:00 CRITICAL Uncaught Error: Interface "ScssPhp\ScssPhp\Exception\SassException" not found in C:\wamp64\www\wordpress\Luna-Beauty\wp-content\plugins\ocean-extra\includes\panel\scssphp\src\Exception\CompilerException.php:22
+Stack trace:
+#0 C:\wamp64\www\wordpress\Luna-Beauty\wp-content\plugins\ocean-extra\includes\panel\scssphp\scss.inc.php(12): include_once()
+#1 C:\wamp64\www\wordpress\Luna-Beauty\wp-content\plugins\ocean-extra\includes\panel\scripts.php(860): require_once('C:\\wamp64\\www\\w...')
+#2 C:\wamp64\www\wordpress\Luna-Beauty\wp-content\plugins\ocean-extra\includes\panel\scripts.php(34): Ocean_Extra_Scripts_Panel::generate_css()
+#3 C:\wamp64\www\wordpress\Luna-Beauty\wp-content\plugins\ocean-extra\includes\panel\scripts.php(1474): Ocean_Extra_Scripts_Panel->__construct()
+#4 C:\wamp64\www\wordpress\Luna-Beauty\wp-content\plugins\ocean-extra\includes\panel\theme-panel.php(643): require_once('C:\\wamp64\\www\\w...')
+#5 C:\wamp64\www\wordpress\Luna-Beauty\wp-content\plugins\ocean-extra\includes\panel\theme-panel.php(41): Ocean_Extra_Theme_Panel::load_addons()
+#6 C:\wamp64\www\wordpress\Luna-Beauty\wp-content\plugins\ocean-extra\includes\panel\theme-panel.php(686): Ocean_Extra_Theme_Panel->__construct()
+#7 C:\wamp64\www\wordpress\Luna-Beauty\wp-content\plugins\ocean-extra\ocean-extra.php(130): require_once('C:\\wamp64\\www\\w...')
+#8 C:\wamp64\www\wordpress\Luna-Beauty\wp-content\plugins\ocean-extra\ocean-extra.php(188): Ocean_Extra->__construct()
+#9 C:\wamp64\www\wordpress\Luna-Beauty\wp-content\plugins\ocean-extra\ocean-extra.php(31): Ocean_Extra::instance()
+#10 C:\wamp64\www\wordpress\Luna-Beauty\wp-content\plugins\ocean-extra\ocean-extra.php(34): Ocean_Extra()
+#11 C:\wamp64\www\wordpress\Luna-Beauty\wp-admin\includes\plugin.php(2314): include_once('C:\\wamp64\\www\\w...')
+#12 C:\wamp64\www\wordpress\Luna-Beauty\wp-admin\includes\plugin.php(661): plugin_sandbox_scrape('ocean-extra/oce...')
+#13 C:\wamp64\www\wordpress\Luna-Beauty\wp-content\themes\oceanwp\inc\activation-notice\class-oceanwp-plugin-manager.php(150): activate_plugin('ocean-extra/oce...', '', false, true)
+#14 C:\wamp64\www\wordpress\Luna-Beauty\wp-content\themes\oceanwp\inc\activation-notice\api.php(67): Oceanwp_Plugin_Manager->plugin_activation('ocean-extra')
+#15 C:\wamp64\www\wordpress\Luna-Beauty\wp-includes\class-wp-hook.php(308): OCEANWP_Theme_Class::{closure}('')
+#16 C:\wamp64\www\wordpress\Luna-Beauty\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#17 C:\wamp64\www\wordpress\Luna-Beauty\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#18 C:\wamp64\www\wordpress\Luna-Beauty\wp-admin\admin-ajax.php(188): do_action('wp_ajax_oceanwp...')
+#19 {main}
+  thrown dans C:\wamp64\www\wordpress\Luna-Beauty\wp-content\plugins\ocean-extra\includes\panel\scssphp\src\Exception\CompilerException.php à la ligne 22
+
+2023-01-20T16:17:01+00:00 CRITICAL Uncaught Error: Class "OceanWP_Customizer_Range_Control" not found in C:\wamp64\www\wordpress\Luna-Beauty\wp-content\plugins\ocean-extra\includes\preloader\customizer.php:224
+Stack trace:
+#0 C:\wamp64\www\wordpress\Luna-Beauty\wp-includes\class-wp-hook.php(308): Ocean_Preloader_Customizer->customizer_options(Object(WP_Customize_Manager))
+#1 C:\wamp64\www\wordpress\Luna-Beauty\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#2 C:\wamp64\www\wordpress\Luna-Beauty\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\wamp64\www\wordpress\Luna-Beauty\wp-includes\class-wp-customize-manager.php(934): do_action('customize_regis...', Object(WP_Customize_Manager))
+#4 C:\wamp64\www\wordpress\Luna-Beauty\wp-includes\class-wp-hook.php(308): WP_Customize_Manager->wp_loaded('')
+#5 C:\wamp64\www\wordpress\Luna-Beauty\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#6 C:\wamp64\www\wordpress\Luna-Beauty\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#7 C:\wamp64\www\wordpress\Luna-Beauty\wp-settings.php(639): do_action('wp_loaded')
+#8 C:\wamp64\www\wordpress\Luna-Beauty\wp-config.php(98): require_once('C:\\wamp64\\www\\w...')
+#9 C:\wamp64\www\wordpress\Luna-Beauty\wp-load.php(50): require_once('C:\\wamp64\\www\\w...')
+#10 C:\wamp64\www\wordpress\Luna-Beauty\wp-admin\admin.php(34): require_once('C:\\wamp64\\www\\w...')
+#11 C:\wamp64\www\wordpress\Luna-Beauty\wp-admin\customize.php(13): require_once('C:\\wamp64\\www\\w...')
+#12 {main}
+  thrown dans C:\wamp64\www\wordpress\Luna-Beauty\wp-content\plugins\ocean-extra\includes\preloader\customizer.php à la ligne 224
+
+2023-01-20T19:10:50+00:00 CRITICAL Uncaught Error: Call to undefined method Automattic\Jetpack\Sync\Actions::reset_sync_locks() in C:\wamp64\www\wordpress\Luna-Beauty\wp-content\plugins\jetpack\jetpack_vendor\automattic\jetpack-sync\src\class-sender.php:964
+Stack trace:
+#0 C:\wamp64\www\wordpress\Luna-Beauty\wp-content\plugins\jetpack\jetpack_vendor\automattic\jetpack-sync\src\class-sender.php(976): Automattic\Jetpack\Sync\Sender->reset_data()
+#1 C:\wamp64\www\wordpress\Luna-Beauty\wp-content\plugins\jetpack\uninstall.php(46): Automattic\Jetpack\Sync\Sender->uninstall()
+#2 C:\wamp64\www\wordpress\Luna-Beauty\wp-content\plugins\jetpack\uninstall.php(52): jetpack_uninstall()
+#3 C:\wamp64\www\wordpress\Luna-Beauty\wp-admin\includes\plugin.php(1241): include_once('C:\\wamp64\\www\\w...')
+#4 C:\wamp64\www\wordpress\Luna-Beauty\wp-admin\includes\plugin.php(958): uninstall_plugin('jetpack/jetpack...')
+#5 C:\wamp64\www\wordpress\Luna-Beauty\wp-admin\includes\ajax-actions.php(4698): delete_plugins(Array)
+#6 C:\wamp64\www\wordpress\Luna-Beauty\wp-includes\class-wp-hook.php(308): wp_ajax_delete_plugin('')
+#7 C:\wamp64\www\wordpress\Luna-Beauty\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#8 C:\wamp64\www\wordpress\Luna-Beauty\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#9 C:\wamp64\www\wordpress\Luna-Beauty\wp-admin\admin-ajax.php(188): do_action('wp_ajax_delete-...')
+#10 {main}
+  thrown dans C:\wamp64\www\wordpress\Luna-Beauty\wp-content\plugins\jetpack\jetpack_vendor\automattic\jetpack-sync\src\class-sender.php à la ligne 964
+
+2023-01-20T19:11:28+00:00 CRITICAL Uncaught Error: Call to undefined method Automattic\Jetpack\Sync\Actions::reset_sync_locks() in C:\wamp64\www\wordpress\Luna-Beauty\wp-content\plugins\jetpack\jetpack_vendor\automattic\jetpack-sync\src\class-sender.php:964
+Stack trace:
+#0 C:\wamp64\www\wordpress\Luna-Beauty\wp-content\plugins\jetpack\jetpack_vendor\automattic\jetpack-sync\src\class-sender.php(976): Automattic\Jetpack\Sync\Sender->reset_data()
+#1 C:\wamp64\www\wordpress\Luna-Beauty\wp-content\plugins\jetpack\uninstall.php(46): Automattic\Jetpack\Sync\Sender->uninstall()
+#2 C:\wamp64\www\wordpress\Luna-Beauty\wp-content\plugins\jetpack\uninstall.php(52): jetpack_uninstall()
+#3 C:\wamp64\www\wordpress\Luna-Beauty\wp-admin\includes\plugin.php(1241): include_once('C:\\wamp64\\www\\w...')
+#4 C:\wamp64\www\wordpress\Luna-Beauty\wp-admin\includes\plugin.php(958): uninstall_plugin('jetpack/jetpack...')
+#5 C:\wamp64\www\wordpress\Luna-Beauty\wp-admin\includes\ajax-actions.php(4698): delete_plugins(Array)
+#6 C:\wamp64\www\wordpress\Luna-Beauty\wp-includes\class-wp-hook.php(308): wp_ajax_delete_plugin('')
+#7 C:\wamp64\www\wordpress\Luna-Beauty\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#8 C:\wamp64\www\wordpress\Luna-Beauty\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#9 C:\wamp64\www\wordpress\Luna-Beauty\wp-admin\admin-ajax.php(188): do_action('wp_ajax_delete-...')
+#10 {main}
+  thrown dans C:\wamp64\www\wordpress\Luna-Beauty\wp-content\plugins\jetpack\jetpack_vendor\automattic\jetpack-sync\src\class-sender.php à la ligne 964
+
+2023-01-20T19:12:24+00:00 CRITICAL Uncaught Error: Call to undefined method Automattic\Jetpack\Sync\Actions::reset_sync_locks() in C:\wamp64\www\wordpress\Luna-Beauty\wp-content\plugins\jetpack\jetpack_vendor\automattic\jetpack-sync\src\class-sender.php:964
+Stack trace:
+#0 C:\wamp64\www\wordpress\Luna-Beauty\wp-content\plugins\jetpack\jetpack_vendor\automattic\jetpack-sync\src\class-sender.php(976): Automattic\Jetpack\Sync\Sender->reset_data()
+#1 C:\wamp64\www\wordpress\Luna-Beauty\wp-content\plugins\jetpack\uninstall.php(46): Automattic\Jetpack\Sync\Sender->uninstall()
+#2 C:\wamp64\www\wordpress\Luna-Beauty\wp-content\plugins\jetpack\uninstall.php(52): jetpack_uninstall()
+#3 C:\wamp64\www\wordpress\Luna-Beauty\wp-admin\includes\plugin.php(1241): include_once('C:\\wamp64\\www\\w...')
+#4 C:\wamp64\www\wordpress\Luna-Beauty\wp-admin\includes\plugin.php(958): uninstall_plugin('jetpack/jetpack...')
+#5 C:\wamp64\www\wordpress\Luna-Beauty\wp-admin\includes\ajax-actions.php(4698): delete_plugins(Array)
+#6 C:\wamp64\www\wordpress\Luna-Beauty\wp-includes\class-wp-hook.php(308): wp_ajax_delete_plugin('')
+#7 C:\wamp64\www\wordpress\Luna-Beauty\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#8 C:\wamp64\www\wordpress\Luna-Beauty\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#9 C:\wamp64\www\wordpress\Luna-Beauty\wp-admin\admin-ajax.php(188): do_action('wp_ajax_delete-...')
+#10 {main}
+  thrown dans C:\wamp64\www\wordpress\Luna-Beauty\wp-content\plugins\jetpack\jetpack_vendor\automattic\jetpack-sync\src\class-sender.php à la ligne 964
+
